@@ -52,6 +52,13 @@ ol {
   justify-content: flex-end;
 }
 
+.result__video-container {
+  width: 711px;
+  height: 386px;
+  margin-bottom: 16px;
+  inset: 0;
+}
+
 .search-form {
   display: flex;
   justify-content: space-between;
