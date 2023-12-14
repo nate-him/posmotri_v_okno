@@ -50,13 +50,19 @@ ol {
   flex-direction: column;
   gap: 16px;
   justify-content: flex-end;
+  
 }
 
 .result__video-container {
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
-  inset: 0;
+  margin-bottom: 16px;  
+  background-color: #000;
+}
+
+.result__video {
+  width: 100%;
+  object-fit: contain;
 }
 
 .search-form {
@@ -66,14 +72,15 @@ ol {
 }
 
 .content__details {
-  inset: 0;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 26px;
 }
 
 .title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
@@ -85,6 +92,46 @@ ol {
 
 .content__list {
   height: 298px;
-  overflow-y: scroll;
+  overflow: hidden auto;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
 }
 
+.content__list-item {
+
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__video-card-thumbnail {
+  height: 103px;
+  width: 194px;
+  object-fit: cover;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
+.content__video-card-title {
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 90%;
+  
+}
