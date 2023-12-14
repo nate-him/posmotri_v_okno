@@ -36,3 +36,48 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  padding: 133px 60px;
+  gap: 30px;
+  min-width: 1140px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__details {
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  height: 298px;
+  overflow-y: scroll;
+}
+
