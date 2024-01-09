@@ -89,6 +89,8 @@ ol {
 }
 
 .search-form__label {
+  display: flex;
+  gap: 5px;
   width: fit-content;
   cursor: pointer;
 }
