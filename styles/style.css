@@ -33,7 +33,6 @@ ol {
   list-style: none;
 }
 
-
 .page {
   margin: auto;
   color: #fff;
@@ -94,33 +93,33 @@ ol {
 
 .search-form__label {
   display: flex;
+  align-items: center;
   gap: 5px;
   width: fit-content;
   cursor: pointer;
-  align-items: center;
 }
 
 .search-form__textfield {
   min-width: 225px;
   border-top: 1px solid currentColor;
   border-bottom: 1px solid currentColor;
+  padding: 2px 0;
   color: rgba(255, 255, 255, 0.70);
   font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   font-style: normal;
   line-height: normal;
   background-color: transparent;
   appearance: none;
-  padding: 2px 0;
 }
 
 .search-form__textfield::placeholder {
+  padding: 0;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: normal;
-  padding: 0;
 }
 
 .search-form__textfield:focus{
@@ -142,13 +141,13 @@ ol {
   border: 1px solid #FFF;
 }
 
-input[type="checkbox"] + .search-form__pseudo-checkbox {
+/*input[type="checkbox"] + .search-form__pseudo-checkbox {
   
-}
+}*/
 
 .search-form__label:hover .search-form__pseudo-checkbox ~ .search-form__label-text {
-  cursor: pointer;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
@@ -192,8 +191,8 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 }
 
 .search-form__submit-button {
-  align-self: flex-end;
   flex-grow: 1;
+  align-self: flex-end;
 }
 
 .more-button {
@@ -210,9 +209,9 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 
 .title {
   font-family: Oswald, sans-serif;
+  font-weight: 700;
   font-size: 75px;
   line-height: 94%;
-  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -227,7 +226,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   gap: 30px;
   height: 298px;
   overflow: hidden auto;
-  
 }
 
 .content__video-card {
@@ -244,13 +242,13 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 
 .content__video-card-title {
   margin-bottom: 6px;
+  overflow: hidden;
   color: #fff;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
-  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -263,10 +261,10 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 }
 
 .content__card-link {
-  color: #fff;
-  text-decoration: none;
   display: block;
   padding: 2px;
+  color: #fff;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -284,7 +282,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 
 .content__card-link:active {
   background-color: #545050;
-  
 }
 
 .content__card-link:focus-visible {
