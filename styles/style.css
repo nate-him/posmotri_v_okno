@@ -99,6 +99,10 @@ ol {
   cursor: pointer;
 }
 
+.search-form__label:has(:focus-visible) {
+  border: 1px solid #FFF;
+}
+
 .search-form__textfield {
   min-width: 225px;
   border-top: 1px solid currentColor;
@@ -122,12 +126,13 @@ ol {
   line-height: normal;
 }
 
-.search-form__textfield:focus{
+.search-form__textfield:focus {
   outline: 0;
 }
 
-.search-form__label:has(:focus-visible){
-  border: 1px solid #FFF;
+.search-form__textfield:active {
+  outline: 1px solid #FFF;
+  border: none;
 }
 
 .search-form__checkbox-list {
@@ -181,7 +186,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   outline: 0;
 }
 
-.button:focus-visible{
+.button:focus-visible {
   outline: 1px solid #FFF;
   outline-offset: 1px;
 }
