@@ -41,6 +41,9 @@ ol {
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
