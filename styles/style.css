@@ -131,8 +131,8 @@ ol {
 }
 
 .search-form__textfield:active {
-  outline: 1px solid #FFF;
-  border: none;
+  outline: 0;
+  border: 1px solid #FFF;
 }
 
 .search-form__checkbox-list {
@@ -150,7 +150,7 @@ ol {
   
 }*/
 
-.search-form__label:hover .search-form__pseudo-checkbox ~ .search-form__label-text {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -188,7 +188,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 
 .button:focus-visible {
   outline: 1px solid #FFF;
-  outline-offset: 1px;
+  outline-offset: -2px;
 }
 
 .button:active {
